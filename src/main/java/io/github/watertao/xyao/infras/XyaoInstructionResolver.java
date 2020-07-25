@@ -143,7 +143,7 @@ public class XyaoInstructionResolver implements MessageListener, ApplicationCont
 
     ((XyaoMessage.StringEntity) message.getEntities().get(0)).setPayload(
       ((XyaoMessage.StringEntity) message.getEntities().get(0)).getPayload() +
-        "\n( 使用 " + env.getProperty("xyao.brain") + ":help 了解更多 )"
+        "\n( 使用 " + env.getProperty("xyao.brain") + ":help 或 " + env.getProperty("xyao.brain")  + ":help -w 了解更多 )"
     );
 
     channelProxy.publish(message);
