@@ -18,7 +18,7 @@ import java.util.Map;
 
 @Service("help")
 @Instruction(
-  syntax = "help [instruction]",
+  syntax = "help [options...] [<instruction>]",
   description = "查看其它指令的使用方式，比如 help echo",
   masterOnly = false,
   msgEnv = MessageEnvironmentEnum.BOTH
